@@ -7,13 +7,7 @@ const Location = ({ handleChange }) => {
       <h4 className="text-primary text-lg font-medium mb-2">Location</h4>
       <div>
         <label className="sidebar-label-container">
-          <input
-            type="radio"
-            name="label"
-            id="label"
-            value=""
-            onChange={handleChange}
-          />
+          <input type="radio" name="test" id="test" onChange={handleChange} />
           <span className="checkmark"></span>
           <h4 className="text-primary font-semibold">All</h4>
         </label>
