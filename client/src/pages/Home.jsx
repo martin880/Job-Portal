@@ -41,6 +41,27 @@ const Home = () => {
     setSelectedCategory(e.target.value);
   };
 
+  // calculate the index range
+  const calculatePageRange = () => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return { startIndex, endIndex };
+  };
+
+  // function for the previous
+  const prevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  // function for the next page
+  const nextPage = () => {
+    if (currentPage < Math.ceil(filteredItems.length / itemsPerPage)) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
   // main function
   const filteredData = (jobs, selected, query) => {
     let filteredJobs = jobs;
@@ -68,6 +89,10 @@ const Home = () => {
       );
       console.log(filteredJobs);
     }
+
+    // slice the data based on current page
+    const { startIndex, endIndex } = calculatePageRange();
+    filteredJobs = filteredJobs.slice(startIndex, endIndex);
     return filteredJobs.map((data, i) => <Card key={i} data={data} />);
   };
 
@@ -96,6 +121,33 @@ const Home = () => {
               </h3>
               <p className="text-primary font-semibold">No data found!!</p>
             </>
+          )}
+          {/* pagination here */}
+          {result.length > 0 ? (
+            <div className="flex justify-center mt-4 space-x-8">
+              <button
+                onClick={prevPage}
+                disabled={currentPage === 1}
+                className="text-primary"
+              >
+                Previous
+              </button>
+              <span className="text-primary mx-2">
+                Page {currentPage} of{" "}
+                {Math.ceil(filteredItems.length / itemsPerPage)}
+              </span>
+              <button
+                onClick={nextPage}
+                disabled={
+                  currentPage === Math.ceil(filteredItems.length / itemsPerPage)
+                }
+                className="hover:underline text-primary"
+              >
+                Next
+              </button>
+            </div>
+          ) : (
+            ""
           )}
         </div>
         {/* right side */}
