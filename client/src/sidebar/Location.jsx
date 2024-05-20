@@ -19,26 +19,26 @@ const Location = ({ handleChange }) => {
         </label>
         <InputField
           handleChange={handleChange}
-          value="london"
-          title="London"
+          value="jakarta"
+          title="Jakarta"
           name="test"
         />
         <InputField
           handleChange={handleChange}
-          value="seattle"
-          title="Seattle"
+          value="singapure"
+          title="Singapure"
           name="test"
         />
         <InputField
           handleChange={handleChange}
-          value="san fransisco"
-          title="San Fransisco"
+          value="batam"
+          title="Batam"
           name="test"
         />
         <InputField
           handleChange={handleChange}
-          value="boston"
-          title="Boston"
+          value="medan"
+          title="Medan"
           name="test"
         />
       </div>
