@@ -7,7 +7,7 @@ const NewsLetter = () => {
     <>
       <div>
         <div>
-          <h3 className="text-lg text-primary font-bold mb-2 flex items-center gap-2">
+          <h3 className="text-lg text-primary font-bold mt-2 mb-2 flex items-center gap-2">
             <FaRegEnvelopeOpen />
             Email me for the job
           </h3>
