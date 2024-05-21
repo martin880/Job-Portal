@@ -67,7 +67,7 @@
     "jobLocation": "Batam",
     "postingDate": "2024-05-03",
     "experienceLevel": "Internship",
-    "employmentType": "Temporary",
+    "employmentType": "Contract",
     "description": "We are seeking a talented web developer to join our team. As a web developer at Meta, you will collaborate with cross-functional teams to design, develop, and maintain web applications and features that are used by millions of users every day. You'll have the chance to work on a variety of projects, ranging from optimizing user experiences to implementing new features and functionalities."
   },
   {
@@ -123,7 +123,7 @@
     "jobLocation": "Batam",
     "postingDate": "2024-05-19",
     "experienceLevel": "Intership",
-    "employmentType": "Temporary",
+    "employmentType": "Contract",
     "description": "We are seeking a skilled DevOps Engineer to join our team at Schneider Electric. As a DevOps Engineer, you will play a key role in building and maintaining the infrastructure, tools, and processes that enable seamless software delivery and operation. You'll collaborate with development, operations, and quality assurance teams to automate workflows, implement best practices, and optimize the end-to-end software delivery pipeline."
   },
   {
@@ -137,7 +137,7 @@
     "jobLocation": "Medan",
     "postingDate": "2024-05-19",
     "experienceLevel": "Intership",
-    "employmentType": "Temporary",
+    "employmentType": "Contract",
     "description": "We are seeking a skilled Database Engineer to join our team at Honda. As a Database Engineer, you will be responsible for designing, implementing, and managing databases that store and retrieve data efficiently and reliably. You'll collaborate with cross-functional teams to support various business applications, from vehicle manufacturing and sales to customer service and supply chain management."
   }
 ]

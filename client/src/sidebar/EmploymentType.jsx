@@ -33,8 +33,8 @@ const EmploymentType = ({ handleChange }) => {
         />
         <InputField
           handleChange={handleChange}
-          value="temporary"
-          title="Temporary"
+          value="contract"
+          title="Contract"
           name="test"
         />
       </div>
