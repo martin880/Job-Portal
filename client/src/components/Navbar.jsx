@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import { IconButton, useColorMode } from "@chakra-ui/react";
 import logo from "../img/webhook.png";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { MdCloseFullscreen } from "react-icons/md";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { colorMode, toggleColorMode } = useColorMode();
 
   const handleMenuToggler = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -39,6 +42,20 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
+          <IconButton
+            icon={
+              colorMode === "light" ? (
+                <FaSun color="orange" />
+              ) : (
+                <FaMoon color="blue" />
+              )
+            }
+            isRound={"true"}
+            size={"sm"}
+            alignSelf={"flex-end"}
+            onClick={toggleColorMode}
+          ></IconButton>
 
           {/* Sign up & login button */}
           <div className="text-base text-primary font-medium space-x-5 hidden lg:block">
