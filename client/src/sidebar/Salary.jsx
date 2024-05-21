@@ -6,8 +6,8 @@ const Salary = ({ handleChange, handleClick }) => {
   return (
     <>
       <div>
-        <h4 className="text-lg font-medium mb-2">Salary</h4>
-        <div className="mb-4">
+        <h4 className="text-lg text-primary font-medium mb-2">Salary</h4>
+        <div className="mb-4 text-primary">
           <Button onClickHandler={handleClick} value="" title="Hourly" />
           <Button
             onClickHandler={handleClick}
@@ -23,6 +23,7 @@ const Salary = ({ handleChange, handleClick }) => {
             type="radio"
             name="test"
             id="test"
+            value={""}
             onChange={handleChange}
             onClick={handleClick}
           />
@@ -31,26 +32,26 @@ const Salary = ({ handleChange, handleClick }) => {
         </label>
         <InputField
           handleChange={handleChange}
-          value={30}
-          title="< 3000"
+          value={6000000}
+          title="< 6 jt"
           name="test2"
         />
         <InputField
           handleChange={handleChange}
-          value={50}
-          title="< 5000"
+          value={7000000}
+          title="< 8 jt"
           name="test2"
         />
         <InputField
           handleChange={handleChange}
-          value={80}
-          title="< 8000"
+          value={8000000}
+          title="< 10 jt"
           name="test2"
         />
         <InputField
           handleChange={handleChange}
-          value={100}
-          title="< 10000"
+          value={10000000}
+          title="> 10 jt"
           name="test2"
         />
       </div>

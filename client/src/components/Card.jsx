@@ -35,7 +35,7 @@ const Card = ({ data }) => {
               <FcClock /> {employmentType}
             </span>
             <span className="flex items-center gap-2">
-              <FaSackDollar /> {minPrice} - {maxPrice}k
+              <FaSackDollar /> {minPrice} - {maxPrice}
             </span>
             <span className="flex items-center gap-2">
               <IoCalendarNumberSharp /> {postingDate}

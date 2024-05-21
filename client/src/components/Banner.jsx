@@ -5,10 +5,10 @@ import { FaMapLocationDot } from "react-icons/fa6";
 const Banner = ({ query, handleInputChange }) => {
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 md:py-20 py-14">
-      <h1 className="text-5xl font-bold text-primary mb-3">
+      <h1 className="text-4xl font-bold text-primary mb-3">
         Cari Lowongan <span className="text-blue">Kerja</span> Hari Ini
       </h1>
-      <p className="text-lg text-black/70 mb-8">
+      <p className="text-md text-primary/70 mb-8">
         Temukan pekerjaan yang cocok dengan keahlianmu
       </p>
 
