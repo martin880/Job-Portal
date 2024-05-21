@@ -78,7 +78,7 @@ const Navbar = () => {
             {navItems.map(({ path, title }) => (
               <li
                 key={path}
-                className="text-base text-white first:text-white py-1"
+                className="text-base text-primary first:text-white py-1"
               >
                 <NavLink
                   to={path}

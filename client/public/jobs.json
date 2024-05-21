@@ -11,7 +11,50 @@
     "postingDate": "2024-05-03",
     "experienceLevel": "Any experience",
     "employmentType": "Full-time",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "description": "We are seeking highly skilled software engineers to join our team at Google. As a software engineer, you will collaborate with cross-functional teams to design, develop, and deploy scalable software solutions that address complex technical challenges. You'll have the chance to work on a wide range of projects, from building innovative products to improving existing systems and infrastructure.",
+    "responsibility": [
+      {
+        "1": "1. Design, develop, and maintain high-quality software applications and systems."
+      },
+      {
+        "2": "2. Collaborate with product managers, designers, and other stakeholders to understand requirements and translate them into technical specifications."
+      },
+      {
+        "3": "3. Write clean, efficient, and maintainable code that follows best practices and coding standards."
+      },
+      {
+        "4": "4. Implement scalable and reliable solutions to optimize performance and meet user needs."
+      },
+      {
+        "5": "5. Conduct code reviews, provide feedback, and mentor junior engineers to promote a culture of excellence and continuous improvement."
+      },
+      {
+        "6": "6. Stay up-to-date with the latest technologies and trends in software development and propose innovative solutions to technical challenges."
+      },
+      {
+        "7": "7. Troubleshoot and debug issues reported by users and implement effective solutions to ensure a seamless user experience."
+      }
+    ],
+    "qualifications": [
+      {
+        "1": "1. Bachelor's degree in Computer Science, related technical field, or equivalent practical experience, Master's degree or PhD in Computer Science or related technical field is a plus"
+      },
+      {
+        "2": "2. 2+ years of industry experience in software development"
+      },
+      {
+        "3": "3. Experience with one or more programming languages such as Java, C++, Python, etc."
+      },
+      {
+        "4": "4. Experience with software development processes including coding, testing, debugging, and deployment"
+      },
+      {
+        "5": "5. Experience with large-scale systems and distributed computing is desirable"
+      },
+      {
+        "6": "6. Experience with web technologies such as HTML, CSS, JavaScript is a plus"
+      }
+    ]
   },
   {
     "id": 2,
@@ -25,7 +68,7 @@
     "postingDate": "2024-05-03",
     "experienceLevel": "Internship",
     "employmentType": "Temporary",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "description": "We are seeking a talented web developer to join our team. As a web developer at Meta, you will collaborate with cross-functional teams to design, develop, and maintain web applications and features that are used by millions of users every day. You'll have the chance to work on a variety of projects, ranging from optimizing user experiences to implementing new features and functionalities."
   },
   {
     "id": 3,
@@ -39,7 +82,7 @@
     "postingDate": "2024-05-03",
     "experienceLevel": "Any experience",
     "employmentType": "Full-time",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "description": "We are seeking a talented Data Scientist to join our team at Caterpillar. As a Data Scientist, you will play a key role in analyzing large datasets, building predictive models, and uncovering actionable insights to support decision-making across various business functions. You'll have the chance to work on diverse projects, from forecasting equipment performance to optimizing supply chain operations and enhancing customer experiences."
   },
   {
     "id": 4,
@@ -53,7 +96,7 @@
     "postingDate": "2024-05-19",
     "experienceLevel": "Work remotely",
     "employmentType": "Part-time",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "description": "We are seeking a talented UI/UX Designer to join our team at Shimano. As a UI/UX Designer, you will collaborate with cross-functional teams to design and optimize digital experiences for Shimano's cycling and fishing products. You'll have the chance to work on a wide range of projects, from designing user interfaces for mobile apps and websites to enhancing the overall user experience of our digital platforms."
   },
   {
     "id": 5,
@@ -67,7 +110,7 @@
     "postingDate": "2024-05-19",
     "experienceLevel": "Intership",
     "employmentType": "Full-time",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "description": "We are seeking a talented Frontend Developer to join our team at Amazon. As a Frontend Developer, you will collaborate with cross-functional teams to design, develop, and optimize user interfaces for Amazon's e-commerce platforms and digital products. You'll have the chance to work on a variety of projects, from building responsive web applications to implementing new features and functionalities that drive customer engagement and conversion."
   },
   {
     "id": 6,
@@ -81,7 +124,7 @@
     "postingDate": "2024-05-19",
     "experienceLevel": "Intership",
     "employmentType": "Temporary",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "description": "We are seeking a skilled DevOps Engineer to join our team at Schneider Electric. As a DevOps Engineer, you will play a key role in building and maintaining the infrastructure, tools, and processes that enable seamless software delivery and operation. You'll collaborate with development, operations, and quality assurance teams to automate workflows, implement best practices, and optimize the end-to-end software delivery pipeline."
   },
   {
     "id": 7,
@@ -95,104 +138,6 @@
     "postingDate": "2024-05-19",
     "experienceLevel": "Intership",
     "employmentType": "Temporary",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
-  },
-  {
-    "id": 1,
-    "companyName": "Google",
-    "jobTitle": "Software Engineer",
-    "companyLogo": "/images/Google.png",
-    "minPrice": "8000000",
-    "maxPrice": "10000000",
-    "salaryType": "Monthly",
-    "jobLocation": "Jakarta",
-    "postingDate": "2024-05-03",
-    "experienceLevel": "Any experience",
-    "employmentType": "Full-time",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
-  },
-  {
-    "id": 2,
-    "companyName": "Meta",
-    "jobTitle": "Web Developer",
-    "companyLogo": "/images/Meta.png",
-    "minPrice": "6000000",
-    "maxPrice": "8000000",
-    "salaryType": "Monthly",
-    "jobLocation": "Batam",
-    "postingDate": "2024-05-03",
-    "experienceLevel": "Internship",
-    "employmentType": "Temporary",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
-  },
-  {
-    "id": 3,
-    "companyName": "Caterpillar",
-    "jobTitle": "Data Scientist",
-    "companyLogo": "/images/Caterpillar.png",
-    "minPrice": "10000000",
-    "maxPrice": "15000000",
-    "salaryType": "Monthly",
-    "jobLocation": "Batam",
-    "postingDate": "2024-05-03",
-    "experienceLevel": "Any experience",
-    "employmentType": "Full-time",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
-  },
-  {
-    "id": 4,
-    "companyName": "Shimano",
-    "jobTitle": "UI/UX Designer",
-    "companyLogo": "/images/Shimano.png",
-    "minPrice": "7000000",
-    "maxPrice": "12000000",
-    "salaryType": "Monthly",
-    "jobLocation": "Batam",
-    "postingDate": "2024-05-19",
-    "experienceLevel": "Work remotely",
-    "employmentType": "Part-time",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
-  },
-  {
-    "id": 5,
-    "companyName": "Amazon",
-    "jobTitle": "Frontend Developer",
-    "companyLogo": "/images/Amazon.png",
-    "minPrice": "7000000",
-    "maxPrice": "12000000",
-    "salaryType": "Monthly",
-    "jobLocation": "Jakarta",
-    "postingDate": "2024-05-19",
-    "experienceLevel": "Intership",
-    "employmentType": "Full-time",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
-  },
-  {
-    "id": 6,
-    "companyName": "Schneider",
-    "jobTitle": "DevOps Engineer",
-    "companyLogo": "/images/Schneider.png",
-    "minPrice": "8000000",
-    "maxPrice": "12000000",
-    "salaryType": "Monthly",
-    "jobLocation": "Batam",
-    "postingDate": "2024-05-19",
-    "experienceLevel": "Intership",
-    "employmentType": "Temporary",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
-  },
-  {
-    "id": 7,
-    "companyName": "Honda",
-    "jobTitle": "Database Engineer",
-    "companyLogo": "/images/Honda.png",
-    "minPrice": "8000000",
-    "maxPrice": "12000000",
-    "salaryType": "Monthly",
-    "jobLocation": "Medan",
-    "postingDate": "2024-05-19",
-    "experienceLevel": "Intership",
-    "employmentType": "Temporary",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "description": "We are seeking a skilled Database Engineer to join our team at Honda. As a Database Engineer, you will be responsible for designing, implementing, and managing databases that store and retrieve data efficiently and reliably. You'll collaborate with cross-functional teams to support various business applications, from vehicle manufacturing and sales to customer service and supply chain management."
   }
 ]
