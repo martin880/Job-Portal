@@ -6,10 +6,10 @@ import router from "./router/router";
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <ChakraProvider>
+  <ChakraProvider>
+    <React.StrictMode>
       <ColorModeScript initialColorMode="light" />
       <RouterProvider router={router} />
-    </ChakraProvider>
-  </React.StrictMode>
+    </React.StrictMode>
+  </ChakraProvider>
 );
