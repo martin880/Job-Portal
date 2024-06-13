@@ -4,7 +4,7 @@ import logo from "../img/webhook.png";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { MdCloseFullscreen } from "react-icons/md";
-import { FaSun, FaMoon } from "react-icons/fa";
+// import { FaSun, FaMoon } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <IconButton
+          {/* <IconButton
             icon={
               colorMode === "light" ? (
                 <FaSun color="orange" />
@@ -55,7 +55,7 @@ const Navbar = () => {
             size={"sm"}
             alignSelf={"flex-end"}
             onClick={toggleColorMode}
-          ></IconButton>
+          ></IconButton> */}
 
           {/* Sign up & login button */}
           <div className="text-base text-primary font-medium space-x-5 hidden lg:block">
