@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FcClock } from "react-icons/fc";
-import { FaSackDollar } from "react-icons/fa6";
+import { FaRupiahSign } from "react-icons/fa6";
 import { IoCalendarNumberSharp } from "react-icons/io5";
 import {
   Button,
@@ -34,7 +34,7 @@ const Card = ({ data }) => {
               <FcClock /> {data.employmentType}
             </span>
             <span className="flex items-center gap-2">
-              <FaSackDollar /> {data.minPrice} - {data.maxPrice}
+              <FaRupiahSign /> {data.minPrice} - {data.maxPrice}
             </span>
             <span className="flex items-center gap-2">
               <IoCalendarNumberSharp /> {data.postingDate}
