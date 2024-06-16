@@ -15,9 +15,9 @@ const Location = ({ handleChange }) => {
             onChange={handleChange}
           />
           <span className="checkmark"></span>
-          <h4 className="text-primary font-semibold">All</h4>
+          {/* <h4 className="text-primary font-semibold">All</h4> */}
         </label>
-        <InputField
+        {/* <InputField
           handleChange={handleChange}
           value="jakarta"
           title="Jakarta"
@@ -31,14 +31,14 @@ const Location = ({ handleChange }) => {
         />
         <InputField
           handleChange={handleChange}
-          value="batam"
-          title="Batam"
-          name="test"
-        />
-        <InputField
-          handleChange={handleChange}
           value="medan"
           title="Medan"
+          name="test"
+        /> */}
+        <InputField
+          handleChange={handleChange}
+          value="batam"
+          title="Batam"
           name="test"
         />
       </div>

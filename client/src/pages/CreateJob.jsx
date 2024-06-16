@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import CreateableSelect from "react-select/creatable";
+import { useToast } from "@chakra-ui/react";
 
 const CreateJob = () => {
   const [selectedOption, setSelectedOption] = useState(null);
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
+  const toast = useToast();
 
   const onSubmit = (data) => {
     data.skills = selectedOption;
@@ -21,6 +24,22 @@ const CreateJob = () => {
       .then((res) => res.json())
       .then((result) => {
         console.log(result);
+        if (result.acknowledged === true) {
+          toast({
+            title: `Job posted succesfully`,
+            position: "bottom",
+            status: "success",
+            isClosable: true,
+          });
+        } else {
+          toast({
+            title: `Something error`,
+            position: "bottom",
+            status: "error",
+            isClosable: true,
+          });
+        }
+        reset();
       });
   };
 
@@ -147,6 +166,7 @@ const CreateJob = () => {
                 className="create-job-input"
               >
                 <option value="">pilih pengalaman kerja</option>
+                <option value="WithExperience">Pengalaman</option>
                 <option value="NoExperience">Tidak ada pengalaman</option>
                 <option value="Intership">Magang</option>
                 <option value="WorkRemotely">Remote</option>
