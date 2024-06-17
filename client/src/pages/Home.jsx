@@ -130,7 +130,7 @@ const Home = () => {
               <button
                 onClick={prevPage}
                 disabled={currentPage === 1}
-                className="text-primary"
+                className="text-primary hover:underline"
               >
                 Previous
               </button>

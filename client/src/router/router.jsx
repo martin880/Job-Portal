@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import CreateJob from "../pages/CreateJob";
 import MyJobs from "../pages/MyJobs";
+import SalaryPage from "../pages/SalaryPage";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/my-job",
         element: <MyJobs />,
+      },
+      {
+        path: "/salary",
+        element: <SalaryPage />,
       },
     ],
   },

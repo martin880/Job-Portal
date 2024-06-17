@@ -14,10 +14,6 @@ const MyJobs = () => {
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
 
-  // set current page
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 4;
-
   useEffect(() => {
     setIsLoading(true);
     fetch(`http://localhost:3000/myJobs/${email}`)
@@ -26,7 +22,14 @@ const MyJobs = () => {
         setJobs(data);
         setIsLoading(false);
       });
-  }, [searchText]);
+  }, []);
+
+  // set current page
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 4;
+
+  // Calculate total number of pages
+  const totalPages = Math.ceil(jobs.length / itemsPerPage);
 
   // pagination
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -35,7 +38,7 @@ const MyJobs = () => {
 
   // next btn & previous btn
   const nextPage = () => {
-    if (indexOfLastItem < jobs.length) {
+    if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
     }
   };
@@ -213,7 +216,7 @@ const MyJobs = () => {
               <FaLongArrowAltLeft />
             </button>
           )}
-          {indexOfLastItem < jobs.length && (
+          {currentPage < totalPages && (
             <button className="hover:underline" onClick={nextPage}>
               Next
               <FaLongArrowAltRight />
