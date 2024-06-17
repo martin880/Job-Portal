@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import CreateableSelect from "react-select/creatable";
 import { useToast } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const CreateJob = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -248,8 +249,9 @@ const CreateJob = () => {
 
           <input
             type="submit"
-            className="block mt-12 bg-blue text-white font-semibold px-8 py-2 rounded-sm cursor-pointer"
-          />
+            className="block mt-12 bg-blue text-white
+            font-semibold px-8 py-2 rounded-sm cursor-pointer"
+          ></input>
         </form>
       </div>
     </div>
