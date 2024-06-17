@@ -5,6 +5,7 @@ import {
   CircularProgressLabel,
   useToast,
 } from "@chakra-ui/react";
+import { FaLongArrowAltRight, FaLongArrowAltLeft } from "react-icons/fa";
 
 const MyJobs = () => {
   const email = "martinlumbangaol@gmail.com";
@@ -12,6 +13,10 @@ const MyJobs = () => {
   const [searchText, setSearchText] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
+
+  // set current page
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 4;
 
   useEffect(() => {
     setIsLoading(true);
@@ -22,6 +27,24 @@ const MyJobs = () => {
         setIsLoading(false);
       });
   }, [searchText]);
+
+  // pagination
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentJobs = jobs.slice(indexOfFirstItem, indexOfLastItem);
+
+  // next btn & previous btn
+  const nextPage = () => {
+    if (indexOfLastItem < jobs.length) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const prevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
 
   const handleSearch = () => {
     const filter = jobs.filter(
@@ -146,7 +169,7 @@ const MyJobs = () => {
                   </div>
                 ) : (
                   <tbody>
-                    {jobs.map((job, index) => (
+                    {currentJobs.map((job, index) => (
                       <tr key={index}>
                         <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center text-blueGray-700 ">
                           {index + 1}
@@ -180,6 +203,22 @@ const MyJobs = () => {
               </table>
             </div>
           </div>
+        </div>
+
+        {/* pagination */}
+        <div className="flex justify-center text-primary space-x-8 mb-8">
+          {currentPage > 1 && (
+            <button className="hover:underline" onClick={prevPage}>
+              Previous
+              <FaLongArrowAltLeft />
+            </button>
+          )}
+          {indexOfLastItem < jobs.length && (
+            <button className="hover:underline" onClick={nextPage}>
+              Next
+              <FaLongArrowAltRight />
+            </button>
+          )}
         </div>
       </section>
     </div>

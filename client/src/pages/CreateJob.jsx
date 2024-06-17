@@ -28,14 +28,14 @@ const CreateJob = () => {
         if (result.acknowledged === true) {
           toast({
             title: `Job posted succesfully`,
-            position: "bottom",
+            position: "top-right",
             status: "success",
             isClosable: true,
           });
         } else {
           toast({
             title: `Something error`,
-            position: "bottom",
+            position: "top-right",
             status: "error",
             isClosable: true,
           });
