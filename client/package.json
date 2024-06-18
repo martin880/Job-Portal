@@ -16,6 +16,8 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@sweetalert2/themes": "^5.0.16",
+    "firebase": "^10.12.2",
     "framer-motion": "^11.2.4",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",

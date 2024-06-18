@@ -17,9 +17,13 @@ import {
 const Card = ({ data }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [placement, setPlacement] = React.useState("right");
+  const { _id } = data;
   return (
     <section className="card">
-      <Link to={"/"} className="flex gap-4 flex-col sm:flex-row items-start">
+      <Link
+        to={`/job/${_id}`}
+        className="flex gap-4 flex-col sm:flex-row items-start"
+      >
         <img src={data.companyLogo} alt="" className="w-20"></img>
         <div>
           <h4 className="text-primary mb-1">{data.companyName}</h4>
